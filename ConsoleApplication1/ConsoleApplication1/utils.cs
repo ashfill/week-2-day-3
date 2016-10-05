@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    public static class utils
+    public class utils
     {
+        string[] array = new string[5];
         
+        
+        
+       
     }
 }

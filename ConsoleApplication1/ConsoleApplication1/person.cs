@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    public class person:departments
+    public abstract class person
     {
         string firstname,lastname;
         DateTime dateofbirth;
