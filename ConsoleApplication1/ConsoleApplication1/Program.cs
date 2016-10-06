@@ -57,7 +57,7 @@ namespace ConsoleApplication1
             e4.Payrate = 40;
             e4.Paygrade = 4;
             e4.Hoursworked = 35;
-
+            
             Employee e5 = new Employee();
             e5.Firstname = "audrey";
             e5.Lastname = "karen";
@@ -77,13 +77,14 @@ namespace ConsoleApplication1
             d2.Managersname = "kalen hubert";
             d2.Location = "third floor";
 
-            Employee[] = new Employee[5];
+            Employee[] array = new Employee[5];
 
-            Employee[0] = e1;
-            Employee[1] = e2;
-            Employee[2] = e3;
-            Employee[3] = e4;
-            Employee[4] = e5;
+            array[0] = e1;
+            array[1] = e2;
+            array[2] = e3;
+            array[3] = e4;
+            array[4] = e5;
+            Console.ReadLine();
         }
     }
 }
