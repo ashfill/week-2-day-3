@@ -77,13 +77,13 @@ namespace ConsoleApplication1
             d2.Managersname = "kalen hubert";
             d2.Location = "third floor";
 
-            Employee[] array = new Employee[5];
+            //Employee[] array = new Employee[5];
 
-            array[0] = e1;
-            array[1] = e2;
-            array[2] = e3;
-            array[3] = e4;
-            array[4] = e5;
+            //array[0] = e1;
+            //array[1] = e2;
+            //array[2] = e3;
+            //array[3] = e4;
+            //array[4] = e5;
             //utils.Method(array);
 
             List<Employee> myEmployeeList = new List<Employee>();
@@ -92,9 +92,22 @@ namespace ConsoleApplication1
             for (int i = 0; i < myEmployeeList.Count; i++)
             {
                 myEmployeeList.Add(new Employee());
-                Console.WriteLine("employee first name");
+                Console.WriteLine("first name");
                 myEmployeeList[i].Firstname = Console.ReadLine();
+                Console.WriteLine("last name");
+                myEmployeeList[i].Lastname = Console.ReadLine();
                 Console.WriteLine("date of birth");
+                myEmployeeList[i].Dateofbirth = Convert.ToDateTime(Console.ReadLine());
+                Console.WriteLine("social security number");
+                myEmployeeList[i].Socialsecuritynumber = Console.ReadLine();
+                Console.WriteLine("date employee was hired");
+                myEmployeeList[i].Hiredate = Convert.ToDateTime(Console.ReadLine());
+                Console.WriteLine("payrate");
+                myEmployeeList[i].Payrate = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("pay grade");
+                myEmployeeList[i].Paygrade = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("hours worked");
+                myEmployeeList[i].Hoursworked = Convert.ToInt32(Console.ReadLine());
             };         
             //Console.WriteLine("employee name");
             //string name2 = Console.ReadLine();
