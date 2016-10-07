@@ -69,6 +69,9 @@ namespace ConsoleApplication1
             e5.Paygrade = 5;
             e5.Hoursworked = 60;
 
+            
+
+
             d1.Department = "H.R.";
             d1.Managersname = ("henry wilkins");
             d1.Location = "First floor";
@@ -77,42 +80,71 @@ namespace ConsoleApplication1
             d2.Managersname = "kalen hubert";
             d2.Location = "third floor";
 
-            //Employee[] array = new Employee[5];
+            Employee[] array = new Employee[5];
 
-            //array[0] = e1;
-            //array[1] = e2;
-            //array[2] = e3;
-            //array[3] = e4;
-            //array[4] = e5;
-            //utils.Method(array);
-
-            List<Employee> myEmployeeList = new List<Employee>();
+            array[0] = e1;
+            array[1] = e2;
+            array[2] = e3;
+            array[3] = e4
+            array[4] = e5;
+            utils.Method(array);
 
 
-            for (int i = 0; i < myEmployeeList.Count; i++)
+            myE6List.Add(new Employee());
+
+            bool program = true;
+            List<Employee> myE6List = new List<Employee>();
+            while (program)
             {
-                myEmployeeList.Add(new Employee());
+                Employee e6 = new Employee();
+
                 Console.WriteLine("first name");
-                myEmployeeList[i].Firstname = Console.ReadLine();
+                string A = Console.ReadLine();
+                e6.Firstname = A;
                 Console.WriteLine("last name");
-                myEmployeeList[i].Lastname = Console.ReadLine();
+                string B = Console.ReadLine();
+                e6.Lastname = B;
                 Console.WriteLine("date of birth");
-                myEmployeeList[i].Dateofbirth = Convert.ToDateTime(Console.ReadLine());
+                DateTime C = Convert.ToDateTime(Console.ReadLine());
+                e6.Dateofbirth = C;
                 Console.WriteLine("social security number");
-                myEmployeeList[i].Socialsecuritynumber = Console.ReadLine();
+                string D = Console.ReadLine();
+                e6.Socialsecuritynumber = D;
                 Console.WriteLine("date employee was hired");
-                myEmployeeList[i].Hiredate = Convert.ToDateTime(Console.ReadLine());
+                DateTime E = Convert.ToDateTime(Console.ReadLine());
+                e6.Hiredate = E;
                 Console.WriteLine("payrate");
-                myEmployeeList[i].Payrate = Convert.ToInt32(Console.ReadLine());
+                int F = Convert.ToInt32(Console.ReadLine());
+                e6.Payrate = F;
                 Console.WriteLine("pay grade");
-                myEmployeeList[i].Paygrade = Convert.ToInt32(Console.ReadLine());
+                int G = Convert.ToInt32(Console.ReadLine());
+                e6.Paygrade = G;
                 Console.WriteLine("hours worked");
-                myEmployeeList[i].Hoursworked = Convert.ToInt32(Console.ReadLine());
-            };         
-            //Console.WriteLine("employee name");
-            //string name2 = Console.ReadLine();
-            //Console.WriteLine("date of birth");
-            //string dateofbirth2 = Console.ReadLine();
+                int H = Convert.ToInt32(Console.ReadLine());
+                e6.Hoursworked = H;
+                Console.WriteLine("do you want to continue Y/N");
+                myE6List.Add(e6);
+                string End = Console.ReadLine();
+                if (End == "y")
+                {
+                    program = true;
+                }
+                else
+                {
+                    program = false;
+                }
+
+            };
+            for (int i = 0; i < myE6List.Count; i++)
+            {
+                Console.WriteLine(string.Format("My E6 List {0} Firstname = {1}, Lastname = {2}, Dateofbirth = {3}, Socialsecuritynumber = {4}, Hiredate = {5}, Payrate = {6}, Paygrade = {7}, Hoursworked = {8}",
+                    i, myE6List[i].Firstname, myE6List[i].Lastname, myE6List[i].Dateofbirth, myE6List[i].Socialsecuritynumber, myE6List[i].Hiredate, myE6List[i].Payrate, myE6List[i].Paygrade, myE6List[i].Hoursworked));
+            }
+
+            Console.ReadLine();
         }
-    }
-}
+            }
+                
+            }
+            
+    
