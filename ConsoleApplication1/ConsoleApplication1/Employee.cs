@@ -14,6 +14,16 @@ namespace ConsoleApplication1
         double paygrade;
         int hoursworked;
         string department;
+        private int i;
+
+        public Employee(int i)
+        {
+            this.i = i;
+        }
+
+        public Employee()
+        {
+        }
 
         public DateTime Hiredate
         {

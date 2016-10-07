@@ -84,7 +84,22 @@ namespace ConsoleApplication1
             array[2] = e3;
             array[3] = e4;
             array[4] = e5;
-            Console.ReadLine();
+            //utils.Method(array);
+
+            List<Employee> myEmployeeList = new List<Employee>();
+
+
+            for (int i = 0; i < myEmployeeList.Count; i++)
+            {
+                myEmployeeList.Add(new Employee());
+                Console.WriteLine("employee first name");
+                myEmployeeList[i].Firstname = Console.ReadLine();
+                Console.WriteLine("date of birth");
+            };         
+            //Console.WriteLine("employee name");
+            //string name2 = Console.ReadLine();
+            //Console.WriteLine("date of birth");
+            //string dateofbirth2 = Console.ReadLine();
         }
     }
 }
