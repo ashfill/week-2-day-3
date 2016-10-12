@@ -85,12 +85,12 @@ namespace ConsoleApplication1
             array[0] = e1;
             array[1] = e2;
             array[2] = e3;
-            array[3] = e4
+            array[3] = e4;
             array[4] = e5;
             utils.Method(array);
 
 
-            myE6List.Add(new Employee());
+            //myE6List.Add(new Employee());
 
             bool program = true;
             List<Employee> myE6List = new List<Employee>();
